@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Published_Year_Cannot_Be_in_the_Future</fullName>
+    <active>true</active>
+    <errorConditionFormula>Published_Year__c  &gt;  YEAR( TODAY() )</errorConditionFormula>
+    <errorDisplayField>Published_Year__c</errorDisplayField>
+    <errorMessage>Published year cannot be in the future.</errorMessage>
+</ValidationRule>

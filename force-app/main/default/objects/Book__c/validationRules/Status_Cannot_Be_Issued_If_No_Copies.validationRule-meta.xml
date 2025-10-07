@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Cannot_Be_Issued_If_No_Copies</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Book_Status__c , &apos;Issued&apos;) , Available_Copies__c = 0 )</errorConditionFormula>
+    <errorMessage>Cannot mark book as issued if no copies are available.</errorMessage>
+</ValidationRule>

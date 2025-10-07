@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Issue_Book_with_No_Copies</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Transaction_Status__c , &apos;Issued&apos;)  &amp;&amp;  Book__r.Total_Copies__c  = 0</errorConditionFormula>
+    <errorMessage>No available copies of this book.</errorMessage>
+</ValidationRule>
